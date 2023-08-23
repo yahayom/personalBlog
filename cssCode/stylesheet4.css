@@ -1,0 +1,30 @@
+/* main2..ABOUT*/
+.mncont2{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+.about{
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(3, 90, 3);
+  }
+/* main4...CONTACT*/
+.mncont4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+@media only screen and (max-width: 768px) {
+  .about textarea{
+  height: 120px;
+  width: 270px;
+  }
+
+} 

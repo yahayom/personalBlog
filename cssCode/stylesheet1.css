@@ -1,0 +1,137 @@
+@import url('../cssCode/stylesheet3.css');
+@import url('../cssCode/stylesheet2.css');
+@import url('../cssCode/stylesheet4.css');
+.cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 190px 700px 50px;
+    grid-template-areas: 'hd hd hd'
+                         'sd ct ct'
+                         'ft ft ft';
+}
+.head{
+    grid-area: hd;
+    background-color:  rgba(38, 136, 29, 0.262);
+    /* overflow: auto; */
+}
+.sidebar{
+    grid-area: sd;
+    padding: 2px;
+    background-color:  rgba(36, 123, 28, 0.377);
+    overflow: auto;
+}
+.main{
+    grid-area: ct;
+    background-color:  rgba(17, 69, 12, 0.492);
+    overflow: auto;
+}
+.footer{
+    grid-area: ft;
+    background-color:  rgba(38, 136, 29, 0.262);
+    overflow: auto;
+}
+/* head */
+.hc{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 'sf lg sr'
+                         'sf lg sr'
+                         'sf lg sr';
+   justify-items: center;
+   padding: 20px;
+   
+}
+.subForm{
+    grid-area: sf;
+    
+}
+.logo{
+    grid-area: lg;
+}
+.searsh{
+    grid-area: sr;
+}
+
+/* navabar */
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(36, 123, 28, 0.377);
+
+  }
+  
+  li a {
+    display: block;
+    color: rgb(9, 62, 2);
+    padding: 30px 30px;
+    
+    text-decoration: rgba(36, 123, 28, 0.377);
+  }
+  li a:hover {
+    background-color: rgba(36, 123, 28, 0.377);
+    color: white;
+  }
+/* main1..HOME*/
+.cards {
+    /* grid-template-columns: repeat(100px, 1fr);
+    grid-template-rows: repeat(100px, 1fr); */
+    display: grid;
+    padding: 20px;
+    /* grid-gap: 25px; */
+   
+   
+   
+   
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 330px 1fr;
+    justify-items: center;
+    border: 2px solid rgb(220, 243, 164);
+   
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 4px dotted rgb(220, 243, 164);
+    
+   
+}
+
+
+.dis{
+    color: rgb(5, 77, 36);
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+.dis button{
+    padding: 12px;
+    color: white;
+    background-color: rgba(23, 94, 3, 0.778);
+    
+}
+/* footer */
+.ftcont{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 3px;
+    color: rgb(163, 108, 4);
+}
+@media only screen and (max-width: 768px) {
+   
+    .hc{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 'sf lg'
+                             'sr lg';
+       justify-items: center;
+       padding: 20px;
+    }
+   
+}

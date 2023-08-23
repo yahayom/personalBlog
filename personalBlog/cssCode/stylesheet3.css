@@ -1,0 +1,20 @@
+/* form stylesheet */
+body{
+    
+    background-color: rgba(38, 136, 29, 0.262);
+
+}
+.formCont{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding: 100px;
+   justify-content: baseline;
+
+  
+}
+.bx{
+  padding: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(3, 90, 3);
+}

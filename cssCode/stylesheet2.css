@@ -1,0 +1,15 @@
+/* main3..POSTS */
+.mncont3{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    justify-items: center; */
+    align-items: center;
+    padding: 20px;
+}
+#posts{
+    color: rgb(19, 92, 19);
+    padding: 10px;
+    
+    
+}
